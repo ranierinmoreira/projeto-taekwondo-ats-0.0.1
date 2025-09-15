@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATS Tubarões - Taekwondo</title>
+    <title>ATS Tubarões - Taekwondo | Excelência em Artes Marciais</title>
+    <meta name="description" content="ATS Tubarões - Academia de Taekwondo em Três Rios, RJ. Disciplina, Respeito e Força Interior. Aulas para todas as idades.">
+    <meta name="keywords" content="taekwondo, artes marciais, ATS Tubarões, três rios, academia, disciplina">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+    <link rel="preload" href="imagem/ats-tubaroes.jpg" as="image">
+    
+    <!-- Fontes otimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS crítico inline -->
+    <style>
+        /* CSS crítico para evitar FOUC */
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #fff; margin: 0; padding: 0; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(20px); z-index: 1000; padding: 1rem 0; }
+        .hero { min-height: 100vh; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); display: flex; align-items: center; justify-content: center; }
+    </style>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +31,9 @@
             <div class="logo">ATS Tubarões Taekwondo</div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#classes">Aulas</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="aulas.html">Aulas</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
             </ul>
         </div>
     </nav>
@@ -25,7 +43,7 @@
         <div class="hero-content">
             <h1>ATS Tubarões</h1>
             <p>Excelência em Taekwondo - Disciplina, Respeito e Força Interior</p>
-            <a href="#about" class="cta-button">Conheça Nossa Academia</a>
+            <a href="sobre.html" class="cta-button">Conheça Nossa Academia</a>
         </div>
     </section>
 
@@ -96,69 +114,35 @@
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Informações de Contato</h3>
-                    
-                    <div class="info-item">
-                        <strong>📍 Endereço:</strong>
-                        <p>Rua Barão do Rio Branco, 586 - <br>Centro - Três Rios, RJ</p>
-                    
-                    <div class="info-item">
-                        <strong>📞 Telefone:</strong>
-                        <p>(11) 99999-9999</p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <strong>📧 Email:</strong>
-                        <p>contato@atstubaroes.com.br</p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <strong>🕒 Horário:</strong>
-                        <p>Terça-Feira e Quinta-Feira : 19h às 20h30</p>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Envie uma Mensagem</h3>
-                    <form>
-                        <input type="text" placeholder="Seu Nome" required>
-                        <input type="email" placeholder="Seu Email" required>
-                        <input type="tel" placeholder="Seu Telefone">
-                        <select required>
-                            <option value="">Selecione o Interesse</option>
-                            <option value="iniciante">Aulas para Iniciantes</option>
-                            <option value="intermediario">Aulas Intermediárias</option>
-                            <option value="avancado">Aulas Avançadas</option>
-                            <option value="competicao">Preparação para Competições</option>
-                        </select>
-                        <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
-                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 ATS Tubarões Brasil - Todos os direitos reservados</p>
-            <p>Desenvolvendo campeões dentro e fora do tatame</p>
-            <div class="social-links">
-                <a href="#">📘</a>
-                <a href="#">📷</a>
-                <a href="#">📧</a>
-            </div>
-        </div>
-    </footer>
 
+ <!-- Adicione isso dentro do <head> do seu HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Footer -->
+<footer class="footer" style="background: #fff; color: #000; text-align: center; padding: 20px;">
+    <div class="container">
+        <a href="#home" class="logo-link">
+            <img src="imagem/ats-tubaroes-white.jpg" alt="ATS-logo" style="width:200px;">
+        </a>
+        <p>&copy; 2025 ATS Tubarões Brasil - Todos os direitos reservados</p>
+        <p>Desenvolvendo campeões dentro e fora do tatame</p>
+        
+        <div class="social-links" style="margin-top: 10px;">
+            <a href="https://www.facebook.com/p/ATS-Tubaro%CC%83es-Brasil-100066376615897/" target="_blank" style="margin: 0 10px; color: black;">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/ats_tubaroesbrasil/" target="_blank" style="margin: 0 10px; color: black;">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://wa.me/5524992274037" target="_blank" style="margin: 0 10px; color: black;">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+   
     <script src="script.js"></script>
 </body>
 </html>

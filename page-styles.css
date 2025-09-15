@@ -1,0 +1,717 @@
+/* Estilos específicos para páginas Aulas e Sobre */
+
+/* Página de Aulas */
+.aulas-page {
+    padding: 6rem 2rem;
+    background: var(--dark-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.aulas-page::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('imagem/ats-tubaroes.jpg') center/contain no-repeat;
+    background-size: contain;
+    opacity: 0.03;
+    filter: brightness(0.8) contrast(1.2);
+    mix-blend-mode: screen;
+    z-index: 1;
+}
+
+.aulas-page h2 {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Grid de Aulas */
+.aulas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.aula-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.aula-card.featured {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-dark);
+}
+
+.aula-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-dark);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.aula-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.aula-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.aula-card:hover .aula-image img {
+    transform: scale(1.05);
+}
+
+.aula-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-primary);
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-primary);
+}
+
+.aula-content {
+    padding: 2rem;
+}
+
+.aula-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.aula-description {
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.aula-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.aula-features li {
+    padding: 0.5rem 0;
+    color: var(--text-gray);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.aula-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.aula-schedule {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aula-schedule h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.aula-schedule p {
+    color: var(--text-gray);
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.aula-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.aula-age,
+.aula-duration {
+    background: var(--gradient-primary);
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-primary);
+}
+
+/* Seção de Informações */
+.aulas-info {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+}
+
+.info-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.info-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.info-card p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button.primary {
+    background: var(--gradient-primary);
+    color: #333;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: var(--text-light);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-button.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Página Sobre */
+.sobre-page {
+    padding: 6rem 2rem;
+    background: var(--dark-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-page::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('imagem/ats-tubaroes.jpg') center/contain no-repeat;
+    background-size: contain;
+    opacity: 0.03;
+    filter: brightness(0.8) contrast(1.2);
+    mix-blend-mode: screen;
+    z-index: 1;
+}
+
+.sobre-page h2 {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+}
+
+/* História */
+.historia-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.historia-text h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.historia-text p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.historia-image {
+    position: relative;
+}
+
+.historia-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-dark);
+}
+
+/* MVV Section */
+.mvv-section {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mvv-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.mvv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+}
+
+.mvv-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.mvv-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.mvv-card p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* Instrutores */
+.instrutores-section {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.instrutores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.instrutor-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.instrutor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+}
+
+.instrutor-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.instrutor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instrutor-card:hover .instrutor-image img {
+    transform: scale(1.05);
+}
+
+.instrutor-info {
+    padding: 2rem;
+}
+
+.instrutor-info h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.instrutor-title {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.instrutor-description {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.instrutor-achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.instrutor-achievements span {
+    background: var(--gradient-primary);
+    color: #333;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Instalações */
+.instalacoes-section {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.instalacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.instalacao-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.instalacao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-dark);
+}
+
+.instalacao-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.instalacao-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instalacao-card:hover .instalacao-image img {
+    transform: scale(1.05);
+}
+
+.instalacao-info {
+    padding: 1.5rem;
+}
+
+.instalacao-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.instalacao-info p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Contato */
+.contato-section {
+    position: relative;
+    z-index: 2;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contato-info h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.contato-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contato-icon {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.contato-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.contato-item p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.contato-form {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+}
+
+.contato-form h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-gray);
+}
+
+/* Placeholder para imagens */
+.placeholder-image {
+    background: linear-gradient(45deg, #333, #555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .aulas-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .historia-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contato-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 200px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .mvv-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .instrutores-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .instalacoes-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aula-content {
+        padding: 1.5rem;
+    }
+    
+    .aula-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contato-form {
+        padding: 1.5rem;
+    }
+    
+    .mvv-card,
+    .instrutor-card,
+    .instalacao-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Link ativo na navegação */
+.nav-links a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}

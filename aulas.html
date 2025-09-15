@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas - ATS Tubarões Brasil | Modalidades e Horários</title>
+    <meta name="description" content="Conheça nossas modalidades de Taekwondo. Aulas para iniciantes, intermediários e avançados. Horários e informações completas.">
+    <meta name="keywords" content="taekwondo, aulas, modalidades, horários, ATS Tubarões, iniciantes, avançados">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+    <link rel="preload" href="imagem/ats-tubaroes.jpg" as="image">
+    
+    <!-- Fontes otimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS crítico inline -->
+    <style>
+        /* CSS crítico para evitar FOUC */
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #fff; margin: 0; padding: 0; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(20px); z-index: 1000; padding: 1rem 0; }
+        .hero { min-height: 100vh; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); display: flex; align-items: center; justify-content: center; }
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page-styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">ATS Tubarões Brasil</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="aulas.html" class="active">Aulas</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nossas Aulas</h1>
+            <p>Modalidades e horários para todas as idades e níveis</p>
+            <a href="#aulas-section" class="cta-button">Conheça as Modalidades</a>
+        </div>
+    </section>
+
+    <!-- Seção de Aulas -->
+    <section id="aulas-section" class="aulas-page">
+        <div class="container">
+            <h2>Modalidades de Taekwondo</h2>
+            <p class="page-subtitle">Escolha a modalidade ideal para você ou seu filho</p>
+            
+            <!-- Grid de Aulas -->
+            <div class="aulas-grid">
+                <!-- Aula Iniciantes -->
+                <div class="aula-card featured">
+                    <div class="aula-image">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Aula para Iniciantes" class="placeholder-image">
+                        <div class="aula-badge">Mais Popular</div>
+                    </div>
+                    <div class="aula-content">
+                        <h3>🥋 Iniciantes</h3>
+                        <p class="aula-description">Para quem está começando no Taekwondo</p>
+                        <ul class="aula-features">
+                            <li>Fundamentos básicos</li>
+                            <li>Posturas e movimentos</li>
+                            <li>Disciplina e respeito</li>
+                            <li>Desenvolvimento motor</li>
+                        </ul>
+                        <div class="aula-schedule">
+                            <h4>Horários:</h4>
+                            <p>Segunda e Quarta - 18h às 19h</p>
+                            <p>Sábado - 9h às 10h</p>
+                        </div>
+                        <div class="aula-info">
+                            <span class="aula-age">A partir de 5 anos</span>
+                            <span class="aula-duration">1 hora/aula</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aula Intermediário -->
+                <div class="aula-card">
+                    <div class="aula-image">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Aula Intermediário" class="placeholder-image">
+                    </div>
+                    <div class="aula-content">
+                        <h3>⚡ Intermediário</h3>
+                        <p class="aula-description">Desenvolvimento de técnicas avançadas</p>
+                        <ul class="aula-features">
+                            <li>Kicks e combinações</li>
+                            <li>Defesa pessoal</li>
+                            <li>Preparação para competições</li>
+                            <li>Técnicas de combate</li>
+                        </ul>
+                        <div class="aula-schedule">
+                            <h4>Horários:</h4>
+                            <p>Terça e Quinta - 19h às 20h</p>
+                            <p>Sábado - 10h às 11h</p>
+                        </div>
+                        <div class="aula-info">
+                            <span class="aula-age">A partir de 10 anos</span>
+                            <span class="aula-duration">1 hora/aula</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aula Avançado -->
+                <div class="aula-card">
+                    <div class="aula-image">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Aula Avançado" class="placeholder-image">
+                    </div>
+                    <div class="aula-content">
+                        <h3>🏆 Avançado</h3>
+                        <p class="aula-description">Para atletas experientes</p>
+                        <ul class="aula-features">
+                            <li>Técnicas de competição</li>
+                            <li>Estratégias de luta</li>
+                            <li>Preparação para faixas pretas</li>
+                            <li>Liderança e ensino</li>
+                        </ul>
+                        <div class="aula-schedule">
+                            <h4>Horários:</h4>
+                            <p>Sexta - 20h às 21h</p>
+                            <p>Sábado - 11h às 12h</p>
+                        </div>
+                        <div class="aula-info">
+                            <span class="aula-age">A partir de 14 anos</span>
+                            <span class="aula-duration">1 hora/aula</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aula Defesa Pessoal -->
+                <div class="aula-card">
+                    <div class="aula-image">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Defesa Pessoal" class="placeholder-image">
+                    </div>
+                    <div class="aula-content">
+                        <h3>🛡️ Defesa Pessoal</h3>
+                        <p class="aula-description">Técnicas práticas de autodefesa</p>
+                        <ul class="aula-features">
+                            <li>Técnicas de defesa</li>
+                            <li>Consciência situacional</li>
+                            <li>Controle de agressor</li>
+                            <li>Confiança e segurança</li>
+                        </ul>
+                        <div class="aula-schedule">
+                            <h4>Horários:</h4>
+                            <p>Terça e Quinta - 20h às 21h</p>
+                        </div>
+                        <div class="aula-info">
+                            <span class="aula-age">A partir de 16 anos</span>
+                            <span class="aula-duration">1 hora/aula</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aula Kids -->
+                <div class="aula-card">
+                    <div class="aula-image">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Aula Kids" class="placeholder-image">
+                    </div>
+                    <div class="aula-content">
+                        <h3>👶 Kids (3-6 anos)</h3>
+                        <p class="aula-description">Taekwondo adaptado para crianças pequenas</p>
+                        <ul class="aula-features">
+                            <li>Coordenação motora</li>
+                            <li>Disciplina lúdica</li>
+                            <li>Respeito e valores</li>
+                            <li>Diversão e aprendizado</li>
+                        </ul>
+                        <div class="aula-schedule">
+                            <h4>Horários:</h4>
+                            <p>Segunda e Quarta - 17h às 17h30</p>
+                            <p>Sábado - 8h30 às 9h</p>
+                        </div>
+                        <div class="aula-info">
+                            <span class="aula-age">3 a 6 anos</span>
+                            <span class="aula-duration">30 min/aula</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aula Competição -->
+                <div class="aula-card">
+                    <div class="aula-image">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Aula Competição" class="placeholder-image">
+                    </div>
+                    <div class="aula-content">
+                        <h3>🥇 Competição</h3>
+                        <p class="aula-description">Treinamento específico para competições</p>
+                        <ul class="aula-features">
+                            <li>Técnicas de competição</li>
+                            <li>Preparação física</li>
+                            <li>Estratégias de luta</li>
+                            <li>Mentalidade competitiva</li>
+                        </ul>
+                        <div class="aula-schedule">
+                            <h4>Horários:</h4>
+                            <p>Terça e Quinta - 18h às 19h</p>
+                            <p>Domingo - 9h às 10h</p>
+                        </div>
+                        <div class="aula-info">
+                            <span class="aula-age">A partir de 12 anos</span>
+                            <span class="aula-duration">1 hora/aula</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações Adicionais -->
+            <div class="aulas-info">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">📅</div>
+                        <h3>Horários Flexíveis</h3>
+                        <p>Aulas em diferentes horários para se adequar à sua rotina</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">👨‍🏫</div>
+                        <h3>Instrutores Certificados</h3>
+                        <p>Professores altamente qualificados e experientes</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🏆</div>
+                        <h3>Resultados Comprovados</h3>
+                        <p>Alunos campeões em competições regionais e nacionais</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">💪</div>
+                        <h3>Desenvolvimento Integral</h3>
+                        <p>Físico, mental e espiritual através do Taekwondo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>Pronto para Começar?</h2>
+                <p>Agende uma aula experimental gratuita e descubra o Taekwondo</p>
+                <div class="cta-buttons">
+                    <a href="sobre.html#contato" class="cta-button primary">Agendar Aula</a>
+                    <a href="videos.html" class="cta-button secondary">Ver Vídeos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Footer -->
+    <footer class="footer" style="background: #fff; color: #000; text-align: center; padding: 20px;">
+        <div class="container">
+            <a href="#home" class="logo-link">
+                <img src="imagem/ats-tubaroes-white.jpg" alt="ATS-logo" style="width:200px;">
+            </a>
+            <p>&copy; 2025 ATS Tubarões Brasil - Todos os direitos reservados</p>
+            <p>Desenvolvendo campeões dentro e fora do tatame</p>
+            
+            <div class="social-links" style="margin-top: 10px;">
+                <a href="https://www.facebook.com/p/ATS-Tubaro%CC%83es-Brasil-100066376615897/" target="_blank" style="margin: 0 10px; color: black;">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/ats_tubaroesbrasil/" target="_blank" style="margin: 0 10px; color: black;">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://wa.me/5524992274037" target="_blank" style="margin: 0 10px; color: black;">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>

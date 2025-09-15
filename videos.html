@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos - ATS Tubarões Taekwondo | Aulas e Demonstrações</title>
+    <meta name="description" content="Assista às nossas aulas de Taekwondo em vídeo. Técnicas, demonstrações e treinamentos da ATS Tubarões.">
+    <meta name="keywords" content="taekwondo, vídeos, aulas, técnicas, ATS Tubarões, demonstrações">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+    <link rel="preload" href="imagem/ats-tubaroes.jpg" as="image">
+    
+    <!-- Fontes otimizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS crítico inline -->
+    <style>
+        /* CSS crítico para evitar FOUC */
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #fff; margin: 0; padding: 0; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(10, 10, 10, 0.95); backdrop-filter: blur(20px); z-index: 1000; padding: 1rem 0; }
+        .hero { min-height: 100vh; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); display: flex; align-items: center; justify-content: center; }
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="video-styles.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">ATS Tubarões Taekwondo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="aulas.html">Aulas</a></li>
+                <li><a href="videos.html" class="active">Vídeos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nossos Vídeos</h1>
+            <p>Acompanhe nossas aulas e demonstrações em tempo real</p>
+            <a href="#video-player" class="cta-button">Assistir Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeos -->
+    <section id="video-player" class="videos">
+        <div class="container">
+            <h2>Galeria de Vídeos</h2>
+            <p class="videos-subtitle">Aprenda Taekwondo com nossos instrutores especializados</p>
+            
+            <!-- Player Principal -->
+            <div class="video-player-container">
+                <div class="video-player">
+                    <video id="mainVideo" controls preload="metadata" poster="imagem/ats-tubaroes.jpg">
+                        <source src="" type="video/mp4">
+                        <source src="" type="video/webm">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="play-button" id="playButton">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3 id="videoTitle">Selecione um vídeo</h3>
+                    <p id="videoDescription">Escolha um dos vídeos abaixo para começar a reprodução</p>
+                </div>
+            </div>
+
+            <!-- Lista de Vídeos -->
+            <div class="video-gallery">
+                <div class="video-item" data-video-src="videos/aula-iniciantes.mp4" data-title="Aula para Iniciantes" data-description="Fundamentos básicos do Taekwondo para iniciantes">
+                    <div class="video-thumbnail">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Aula Iniciantes">
+                        <div class="play-overlay">
+                            <div class="play-icon-small">▶</div>
+                        </div>
+                    </div>
+                    <div class="video-meta">
+                        <h4>Aula para Iniciantes</h4>
+                        <p>Fundamentos básicos</p>
+                        <span class="video-duration">15:30</span>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video-src="videos/tecnicas-avancadas.mp4" data-title="Técnicas Avançadas" data-description="Demonstração de técnicas avançadas de Taekwondo">
+                    <div class="video-thumbnail">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Técnicas Avançadas">
+                        <div class="play-overlay">
+                            <div class="play-icon-small">▶</div>
+                        </div>
+                    </div>
+                    <div class="video-meta">
+                        <h4>Técnicas Avançadas</h4>
+                        <p>Demonstração de kicks</p>
+                        <span class="video-duration">22:45</span>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video-src="videos/competicao.mp4" data-title="Preparação para Competição" data-description="Treinamento específico para competições de Taekwondo">
+                    <div class="video-thumbnail">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Preparação Competição">
+                        <div class="play-overlay">
+                            <div class="play-icon-small">▶</div>
+                        </div>
+                    </div>
+                    <div class="video-meta">
+                        <h4>Preparação para Competição</h4>
+                        <p>Treinamento específico</p>
+                        <span class="video-duration">18:20</span>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video-src="videos/defesa-pessoal.mp4" data-title="Defesa Pessoal" data-description="Técnicas de defesa pessoal baseadas no Taekwondo">
+                    <div class="video-thumbnail">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Defesa Pessoal">
+                        <div class="play-overlay">
+                            <div class="play-icon-small">▶</div>
+                        </div>
+                    </div>
+                    <div class="video-meta">
+                        <h4>Defesa Pessoal</h4>
+                        <p>Técnicas de proteção</p>
+                        <span class="video-duration">12:15</span>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video-src="videos/katas.mp4" data-title="Katas Tradicionais" data-description="Sequências de movimentos tradicionais do Taekwondo">
+                    <div class="video-thumbnail">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Katas Tradicionais">
+                        <div class="play-overlay">
+                            <div class="play-icon-small">▶</div>
+                        </div>
+                    </div>
+                    <div class="video-meta">
+                        <h4>Katas Tradicionais</h4>
+                        <p>Sequências tradicionais</p>
+                        <span class="video-duration">25:10</span>
+                    </div>
+                </div>
+
+                <div class="video-item" data-video-src="videos/alongamento.mp4" data-title="Alongamento e Flexibilidade" data-description="Exercícios de alongamento específicos para Taekwondo">
+                    <div class="video-thumbnail">
+                        <img src="imagem/ats-tubaroes.jpg" alt="Alongamento">
+                        <div class="play-overlay">
+                            <div class="play-icon-small">▶</div>
+                        </div>
+                    </div>
+                    <div class="video-meta">
+                        <h4>Alongamento e Flexibilidade</h4>
+                        <p>Exercícios de flexibilidade</p>
+                        <span class="video-duration">20:30</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de Vídeo -->
+            <div class="video-controls">
+                <button class="control-btn" id="prevVideo">⏮ Anterior</button>
+                <button class="control-btn" id="nextVideo">Próximo ⏭</button>
+                <button class="control-btn" id="fullscreenBtn">⛶ Tela Cheia</button>
+            </div>
+
+            <!-- Informações Adicionais -->
+            <div class="video-info-section">
+                <h3>Como Usar o Player</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">▶️</div>
+                        <h4>Reprodução</h4>
+                        <p>Clique no vídeo ou use a barra espaciadora para play/pause</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⌨️</div>
+                        <h4>Atalhos</h4>
+                        <p>Use as setas para navegar e F para tela cheia</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <h4>Mobile</h4>
+                        <p>Totalmente otimizado para dispositivos móveis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Footer -->
+    <footer class="footer" style="background: #fff; color: #000; text-align: center; padding: 20px;">
+        <div class="container">
+            <a href="#home" class="logo-link">
+                <img src="imagem/ats-tubaroes-white.jpg" alt="ATS-logo" style="width:200px;">
+            </a>
+            <p>&copy; 2025 ATS Tubarões Brasil - Todos os direitos reservados</p>
+            <p>Desenvolvendo campeões dentro e fora do tatame</p>
+            
+            <div class="social-links" style="margin-top: 10px;">
+                <a href="https://www.facebook.com/p/ATS-Tubaro%CC%83es-Brasil-100066376615897/" target="_blank" style="margin: 0 10px; color: black;">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/ats_tubaroesbrasil/" target="_blank" style="margin: 0 10px; color: black;">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://wa.me/5524992274037" target="_blank" style="margin: 0 10px; color: black;">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="video-player.js"></script>
+</body>
+</html>
